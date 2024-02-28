@@ -1,0 +1,28 @@
+.topTitle {
+    text-align: start;
+    flex:1;
+    &.large {
+        margin-top: 40px;
+    }
+}
+.topTitleContainer {
+    min-width: 500px;
+    padding: 8px 12px;
+    display: flex;
+    justify-content: space-between;
+    gap: 6px;
+    transition: background 0.1s ease-out,color 0.2s ease-out;
+    &::-webkit-scrollbar, &:hover, &.scroll {
+        background: var(--secondary);
+        color: #1D1B20;
+    }
+    &.newLine{flex-wrap: wrap;}
+}
+.newLine {
+    height: fit-content;
+    flex-basis: 100%;
+}
+.rightIcons {
+    display: flex;
+    gap: 6px;
+}
